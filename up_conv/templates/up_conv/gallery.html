@@ -1,0 +1,10 @@
+<h1> Images </h1>
+{% for img in images %}
+	{% if forloop.counter0|divisibleby:2 %}
+	<img src = '/media/cropped_png/{{folder_name}}/{{img}}'  width="300" title ='Hello'/>
+	{% else %}
+	<p>{{img}}</p>
+	{% endif %}
+{% endfor %}
+
+
